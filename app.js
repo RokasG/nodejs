@@ -1,3 +1,4 @@
+// Simple nodejs routing
 var http = require('http'),
     fs   = require('fs');
 
@@ -25,7 +26,7 @@ http.createServer(function (req, res) {
         case '/about':
             serveStatic(res, '/public/about.html','text/html');
             break;
-        case '/img/logo.jpg':
+        case '/static/images/sitelogo.jpg':
             break;
         default:
             serveStatic(res, '/public/404.html', 'text/html', 404);
