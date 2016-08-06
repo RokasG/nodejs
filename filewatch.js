@@ -16,4 +16,4 @@ FS.watch(filename, function(){
 
 });
 
-console.log('Now watching' + filename + 'for changes');
+console.log('Now watching' + filename);
